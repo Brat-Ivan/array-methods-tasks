@@ -1,9 +1,5 @@
 const initialArray = [1, 20, 13, 234, 59, 9, 40, 78];
 
-const result = greaterThanAverage(initialArray);
-
-console.log(result);
-
 function greaterThanAverage(arr) {
   let newArr = [];
   arr.forEach(value => {
@@ -20,3 +16,7 @@ function greaterThanAverage(arr) {
   });
   return newArr;
 }
+
+const result = greaterThanAverage(initialArray);
+
+console.log(result);
