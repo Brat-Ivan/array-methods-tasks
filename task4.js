@@ -1,10 +1,6 @@
 const initialArray1 = [1, 2, 3];
 const initialArray2 = [4, 5, 6];
 
-const result = combine(initialArray1, initialArray2);
-
-console.log(result);
-
 function combine(arr1, arr2) {
   return [...arr1, ...arr2];
 }
@@ -39,3 +35,7 @@ function combine(arr1, arr2) {
   return arr3;
 }
 */
+
+const result = combine(initialArray1, initialArray2);
+
+console.log(result);
