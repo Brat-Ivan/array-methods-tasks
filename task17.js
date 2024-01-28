@@ -1,9 +1,5 @@
 const initialArray = [1, 20, 13, 234, 59, 9, 40, 78];
 
-const result = lessThanAverage(initialArray);
-
-console.log(result);
-
 function lessThanAverage(arr) {
   let newArr = [];
   arr.forEach(value => {
@@ -20,3 +16,7 @@ function lessThanAverage(arr) {
   });
   return newArr;
 }
+
+const result = lessThanAverage(initialArray);
+
+console.log(result);
