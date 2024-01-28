@@ -1,9 +1,5 @@
 const initialArray = ['Say', 'hello', 'to', 'world'];
 
-const result = firstLetters(initialArray);
-
-console.log(result);
-
 function firstLetters(arr) {
   const newArr = [];
   arr.forEach(value => {
@@ -25,3 +21,7 @@ function firstLetters(arr) {
   return newArr;
 }
 */
+
+const result = firstLetters(initialArray);
+
+console.log(result);
