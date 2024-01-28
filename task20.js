@@ -1,9 +1,5 @@
 const initialArray = [19, 1, 3, 4, 5, 6, 20, 8];
 
-const result = evenIndexOnly(initialArray);
-
-console.log(result);
-
 function evenIndexOnly(arr) {
   const newArr = [];
   arr.forEach((value, index) => {
@@ -13,3 +9,7 @@ function evenIndexOnly(arr) {
   });
   return newArr;
 }
+
+const result = evenIndexOnly(initialArray);
+
+console.log(result);
