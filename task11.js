@@ -1,20 +1,15 @@
 const initialArray = ['Say', 'hello', 'to', 'World'];
 
-const result = uppercaseOnly(initialArray);
-
-console.log(result);
-
 function uppercaseOnly(arr) {
-  let newArr = [];
+  const newArr = [];
   arr.forEach(value => {
-    if (typeof value === 'string') {
+    if (typeof value === 'string' && value[0] === value[0].toUpperCase()) {
       newArr.push(value[0]);
-    }
-  });
-  newArr = newArr.filter(value => {
-    if (value === value.toUpperCase()) {
-      return value;
     }
   });
   return newArr;
 }
+
+const result = uppercaseOnly(initialArray);
+
+console.log(result);
