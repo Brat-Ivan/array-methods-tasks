@@ -1,9 +1,5 @@
 const initialArray = ['Say', 'hello', 'to', 'world', 'javascript', 'students'];
 
-const result = longerThanFive(initialArray);
-
-console.log(result);
-
 function longerThanFive(arr) {
   const newArr = arr.filter(value => {
     if (typeof value === 'string') {
@@ -25,3 +21,7 @@ function longerThanFive(arr) {
   return newArr;
 }
 */
+
+const result = longerThanFive(initialArray);
+
+console.log(result);
