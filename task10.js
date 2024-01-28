@@ -1,21 +1,16 @@
 const initialArray = [1, 2, 3, 2, 6, 5, 4, 4, 9, 1];
 
-const result = uniqueOnly(initialArray);
-
-console.log(result);
-
 // Возвращает массив без повторяющихся в первоначальном массиве элементов:
 function uniqueOnly(arr) {
   let newArr = [];
-  arr = arr.filter(value => {
-    return typeof value === 'number';
-  });
   arr.map(elem => {
-    if (newArr.includes(elem)) {
-      newArr = newArr.filter(value => {
-        return value !== elem;
-      });
-    } else { newArr.push(elem); }
+    if (typeof elem === 'number') {
+      if (newArr.includes(elem)) {
+        newArr = newArr.filter(value => {
+          return value !== elem;
+        });
+      } else { newArr.push(elem); }
+    }
   });
   return newArr;
 }
@@ -24,14 +19,26 @@ function uniqueOnly(arr) {
 /*
 function uniqueOnly(arr) {
   let newArr = [];
-  arr = arr.filter(value => {
-    return typeof value === 'number';
-  });
   arr.map(value => {
-    if (!newArr.includes(value)) {
+    if (typeof value === 'number' && !newArr.includes(value)) {
       newArr.push(value);
     }
   });
   return newArr;
 }
 */
+
+// Решение при помощи Set:
+/*
+function uniqueOnly(arr) {
+  arr = arr.filter(value => {
+    return typeof value === 'number';
+  });
+  let newArr = new Set(arr);
+  return [...newArr];
+}
+*/
+
+const result = uniqueOnly(initialArray);
+
+console.log(result);
