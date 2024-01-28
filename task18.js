@@ -11,10 +11,6 @@ const initialArray2 = [
 	{ "name": "Abiba", "age": 35 },
 ];
 
-const result = unique(initialArray1, initialArray2);
-
-console.log(result);
-
 function unique(arr1, arr2) {
   const newArr = [];
   arr1 = arr1.filter(value => {
@@ -37,3 +33,7 @@ function unique(arr1, arr2) {
   });
   return newArr;
 }
+
+const result = unique(initialArray1, initialArray2);
+
+console.log(result);
