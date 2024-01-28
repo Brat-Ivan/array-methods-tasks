@@ -1,9 +1,5 @@
 const initialArray = ['Say', 'привет', 'to', 'АБЦ Wold'];
 
-const result = latinAlphabetOnly(initialArray);
-
-console.log(result);
-
 function latinAlphabetOnly(arr) {
   const newArr = [];
   arr = arr.filter(value => {
@@ -20,3 +16,7 @@ function latinAlphabetOnly(arr) {
   });
   return newArr;
 }
+
+const result = latinAlphabetOnly(initialArray);
+
+console.log(result);
