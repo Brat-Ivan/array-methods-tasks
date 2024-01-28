@@ -3,13 +3,9 @@ const initialArray = [
   { "name": "Aboba", "age": 16 },
 ];
 
-const result = adultOnly(initialArray);
-
-console.log(result);
-
 function adultOnly(arr) {
   const newArr = arr.filter(obj => {
-    if (typeof obj === 'object' && obj.age > 18) {
+    if (obj?.age > 18) {
       return obj;
     }
   });
@@ -21,10 +17,14 @@ function adultOnly(arr) {
 function adultOnly(arr) {
   const newArr = [];
   arr.forEach(obj => {
-    if (typeof obj === 'object' && obj.age > 18) {
+    if (obj?.age > 18) {
       newArr.push(obj);
     }
   });
   return newArr;
 }
 */
+
+const result = adultOnly(initialArray);
+
+console.log(result);
