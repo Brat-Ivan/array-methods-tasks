@@ -6,10 +6,6 @@ const initialArray = [
 	{ "name": "Abiba", "age": 35 },
 ];
 
-const result = unique(initialArray)
-
-console.log(result)
-
 function unique(arr) {
   let newArr = arr.filter(value => {
     return typeof value === 'object';
@@ -27,3 +23,7 @@ function unique(arr) {
   }
   return newArr;
 }
+
+const result = unique(initialArray);
+
+console.log(result);
