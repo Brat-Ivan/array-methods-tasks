@@ -1,9 +1,5 @@
 const initialArray = ['js', 'world', 'viktor', 'awdjsdc', 'javes'];
 
-const result = contains(initialArray);
-
-console.log(result);
-
 function contains(arr) {
   let newArr = [];
   arr.forEach(value => {
@@ -13,3 +9,7 @@ function contains(arr) {
   });
   return newArr;
 }
+
+const result = contains(initialArray);
+
+console.log(result);
