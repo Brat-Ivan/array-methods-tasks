@@ -1,9 +1,5 @@
 const initialArray = [1, 2, 3, 2, 6, 5, 4, 4, 9, 1];
 
-const result = duplicatesOnly(initialArray);
-
-console.log(result);
-
 function duplicatesOnly(arr) {
   const newArr = [];
   arr.forEach((value, index) => {
@@ -35,3 +31,7 @@ function duplicatesOnly(arr) {
   return newArr;
 }
 */
+
+const result = duplicatesOnly(initialArray);
+
+console.log(result);
